@@ -53,7 +53,7 @@ class SignupPage {
     )
   }
   alertMessageShouldBe(expectedMessage) {
-    cy.get('.alert-error').should('have.text', 'Oops! CPF inválido')
+    cy.get('.alert-error').should('have.text', expectedMessage)
   }
 }
 export default SignupPage
