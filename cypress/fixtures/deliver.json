@@ -1,0 +1,34 @@
+{
+  "signup": {
+    "name": "Ryan Nobrega",
+    "cpf": "00000014141",
+    "email": "ryanlindo@hotmail.com",
+    "whatsapp": "11999999999",
+    "address": {
+      "postalcode": "58025140",
+      "street": "Rua Deputado Álvaro Gaudêncio",
+      "number": "80",
+      "details": "Ap 204",
+      "district": "Treze de Maio",
+      "city_state": "João Pessoa/PB"
+    },
+    "delivery_method": "Moto",
+    "cnh": "cnh-digital.jpg"
+  },
+  "cpf_inv": {
+    "name": "Alexandra",
+    "cpf": "x00000141AA",
+    "email": "alemae@hotmail.com",
+    "whatsapp": "11999999999",
+    "address": {
+      "postalcode": "58025140",
+      "street": "Rua Deputado Álvaro Gaudêncio",
+      "number": "80",
+      "details": "Ap 204",
+      "district": "Treze de Maio",
+      "city_state": "João Pessoa/PB"
+    },
+    "delivery_method": "Moto",
+    "cnh": "cnh-digital.jpg"
+  }
+}
