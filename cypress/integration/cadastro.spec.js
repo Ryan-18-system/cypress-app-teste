@@ -37,4 +37,24 @@ describe('Cadastro', () => {
     signup.submit()
     signup.alertMessageShouldBe('Oops! Email com formato inválido.')
   })
+  context('Required Fields', function () {
+    const messages = [
+      { field: 'name', output: 'É necessário informar o nome' },
+      { field: 'cpf', output: 'É necessário informar o CPF' },
+      { field: 'email', output: 'É necessário informar o email' },
+      { field: 'postalcode', output: 'É necessário informar o CEP' },
+      { field: 'number', output: 'É necessário informar o número do endereço' },
+      { field: 'delivery_method', output: 'Selecione o método de entrega' },
+      { field: 'cnh', output: 'Adicione uma foto da sua CNH' },
+    ]
+    before(function () {
+      signup.go()
+      signup.submit()
+    })
+    messages.forEach(message => {
+      it(`${message.field} is required`, () => {
+        signup.alertMessageShouldBe(message.output)
+      })
+    })
+  })
 })
